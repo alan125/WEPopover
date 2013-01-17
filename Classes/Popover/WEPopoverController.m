@@ -338,15 +338,14 @@
 - (WEPopoverContainerViewProperties *)defaultContainerViewProperties {
 	WEPopoverContainerViewProperties *ret = [WEPopoverContainerViewProperties new];
 	
-	CGSize imageSize = CGSizeMake(30.0f, 30.0f);
-	NSString *bgImageName = @"popoverBgSimple.png";
-	CGFloat bgMargin = 6.0;
-	CGFloat contentMargin = 2.0;
+	CGSize imageSize = CGSizeMake(62.0f, 62.0f);
+	NSString *bgImageName = @"popoverBg";
+	CGFloat contentMargin = 8.0;
 	
-	ret.leftBgMargin = bgMargin;
-	ret.rightBgMargin = bgMargin;
-	ret.topBgMargin = bgMargin;
-	ret.bottomBgMargin = bgMargin;
+	ret.leftBgMargin = 13.5;
+	ret.rightBgMargin = 12.5;
+	ret.topBgMargin = 12.5;
+	ret.bottomBgMargin = 13.5;
 	ret.leftBgCapSize = imageSize.width/2;
 	ret.topBgCapSize = imageSize.height/2;
 	ret.bgImageName = bgImageName;
@@ -356,10 +355,10 @@
 	ret.bottomContentMargin = contentMargin;
 	ret.arrowMargin = 1.0;
 	
-	ret.upArrowImageName = @"popoverArrowUpSimple.png";
-	ret.downArrowImageName = @"popoverArrowDownSimple.png";
-	ret.leftArrowImageName = @"popoverArrowLeftSimple.png";
-	ret.rightArrowImageName = @"popoverArrowRightSimple.png";
+	ret.upArrowImageName = @"popoverArrowUp";
+	ret.downArrowImageName = @"popoverArrowDown";
+	ret.leftArrowImageName = @"popoverArrowLeft";
+	ret.rightArrowImageName = @"popoverArrowRight";
 	return ret;
 }
 
