@@ -39,6 +39,7 @@
 			
 			if ([self isPassthroughView:superHitView]) {
 				hitView = superHitView;
+				[self.delegate viewWasTouched:self];
 			}
 		}
 		
