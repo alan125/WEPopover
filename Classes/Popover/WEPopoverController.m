@@ -175,7 +175,7 @@
         
         [UIView animateWithDuration:FADE_DURATION
                               delay:0.0
-                            options:UIViewAnimationCurveLinear
+                            options:UIViewAnimationOptionCurveLinear
                          animations:^{
                              
                              self.view.alpha = 1.0;
@@ -300,7 +300,7 @@
             
             [UIView animateWithDuration:FADE_DURATION
                                   delay:0.0
-                                options:UIViewAnimationCurveLinear
+                                options:UIViewAnimationOptionCurveLinear
                              animations:^{
                                  
                                  self.view.alpha = 0.0;
